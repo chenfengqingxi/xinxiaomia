@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米</title>
+	<link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<body>
+    <div class="Header">
+	<div class="main">
+		<div class="Left">
+			<a href="">小米商城</a>
+			<a href="">MIUI</a>
+			<a href="">IoT</a>
+			<a href="">云服务</a>
+			<a href="">水滴</a>
+			<a href="">金融</a>
+			<a href="">有品</a>
+			<a href="">Select Region</a>
+		</div>
+		<div class="Right">
+				<div class="Right_left">
+					<a href="">登录</a>
+					<a href="">注册</a>
+					<a href="">消息通知</a>
+				</div>
+				<div class="Right_right">
+					<a href="" class="gwcar">
+						<div class="car"></div>
+						<div class="gwc">购物车（0）</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="daohang">
+    		<a href="" class="logo" title="小米官网"><img src="img/mi.png" alt=""></a>
+    		<div class="l3">
+    			<a href="">小米手机</a>
+    			<a href="">红米</a>
+    			<a href="">笔记本</a>
+    			<a href="">电视</a>
+    			<a href="">盒子</a>
+    			<a href="">新品</a>
+    			<a href="">路由器</a>
+    			<a href="">智能硬件</a>
+    			<a href="">服务</a>
+    			<a href="">社区</a>
+    		</div>
+    		<div class="search">
+    			<div class="search_left">
+    				
+    			</div>
+    			<div class="search_right">
+    			    <div class="search_bj">
+    				<div class="search_zp"></div>
+    				</div>
+    			</div>
+    		</div>
+    </div>
+	<script>
+        window.onload=function () {
+            let n=0;
+            let lis=document.querySelectorAll('.banner0 li');
+            let banner0=document.querySelector('.banner0')
+            function move() {
+                n++;
+                if (n>=lis.length) {
+                    n=0;
+                }
+                lis.forEach(function (dom, index) {
+                    dom.classList.remove('lcx');
+                })
+                lis[n].classList.add('lcx')
+            }
+            let t=setInterval(move,2000);
+            banner0.onmouseover=function () {
+                clearInterval(t)
+            };
+            banner0.onmouseout=function () {
+                t=setInterval(move,2000)
+            }
+
+
+
+
+
+            let list=document.querySelectorAll('.right2 .g01');
+            let nav=document.querySelectorAll('.nav .right3');
+            list.forEach(function (dom,index) {
+                dom.onclick=function () {
+                    list.forEach(function (a,b) {
+                        a.classList.remove('active')
+                        nav[b].classList.remove('active')
+
+                    })
+                    dom.classList.add('active')
+                    nav[index+1].classList.add('active')
+                }
+            })
+
+        }
+	</script>
+    <div class="banner">
+        <ul class="banner0">
+           <li class="lcx">
+               <a href="" class="banner1"><img src="img/41.jpg" alt=""> </a>
+           </li>
+           <li>
+               <a href="" class="banner1"><img src="img/42.jpg" alt=""> </a>
+           </li>
+           <li>
+               <a href="" class="banner1"><img src="img/43.jpg" alt=""> </a>
+           </li>
+           <li>
+               <a href="" class="banner1"><img src="img/44.jpg" alt=""> </a>
+           </li>
+           <li>
+               <a href="" class="banner1"><img src="img/44.jpg" alt=""> </a>
+           </li>
+        </ul>
+        <ul class="cdh">
+            <li>
+                <a href="">
+                    <div class="cdh_left">手机 电话卡</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">笔记本</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">电视 盒子</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">路由器 智能硬件</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">移动电源 电池 插线板</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">耳机 音响</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">保护套 贴膜</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">线材 支架 存储卡</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">箱包 服饰 鞋眼镜</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+            <li>
+                <a href="">
+                    <div class="cdh_left">米兔 生活标签</div>
+                    <div class="cdh_right">&gt;</div>
+                </a>
+            </li> 
+        </ul>
+        <ul class="banner_lbd">
+            <li class="banner_lbd1"></li>
+            <li class="banner_lbd1"></li>
+            <li class="banner_lbd1"></li>
+            <li class="banner_lbd1"></li>
+            <li class="banner_lbd1"></li>
+        </ul>
+        <div class="banner_left">&lt;</div>
+        <div class="banner_right">&gt;</div>
+    </div>
+    <div class="banner2">
+        <div class="banner2_lm1">
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+                <div class="border1"></div>
+                <div class="border2"></div>
+            </a>
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+                <div class="border1"></div>
+                <div class="border2"></div>
+            </a>
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+                
+                <div class="border2"></div>
+            </a>
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+                <div class="border1"></div>
+                
+            </a>
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+                <div class="border1"></div>
+                
+            </a>
+            <a href="">
+                <i class="last1">&#xe601;</i>
+                <div class="last2">选购手机</div>
+            </a>
+        </div>
+        <div class="banner2_lm2">
+            <a href=""><img src="img/56.png" alt=""></a>
+        </div>
+        <div class="banner2_lm2">
+            <a href=""><img src="img/57.png" alt=""></a>
+        </div>
+        <div class="banner2_lm2">
+            <a href=""><img src="img/58.png" alt=""></a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 头部 -->
+    <div class="header">
+	    <div class="top1">
+		<div class="left1">小米明星单品</div>
+		<div class="right1">
+		<div class="right1_1">&lt;</div>
+		<div class="right1_2">&gt;</div>
+		</div>
+	    </div>
+	    <div class="bottom1">
+		<div class="chatu">
+		<a href="" class="zp01">
+			<img src="img/1.png" alt="" class="zp001">
+		</a>
+		<a href="" class="bt01">红米5A</a>
+		<div class="jj01">大屏大电量，轻薄全金属</div>
+		<div class="jq01">1399元起</div></div>
+		
+		<div class="chatu">
+		<a href="" class="zp01">
+			<img src="img/2.png" alt="" class="zp001">
+		</a>
+		<a href="" class="bt01">小米MIX 2</a>
+		<div class="jj01">全面屏2.0，5.99"大屏</div>
+		<div class="jq01">3299元起</div></div>
+		
+		<div class="chatu">
+		<a href="" class="zp01">
+		    <img src="img/3.png" alt="" class="zp001">
+		</a>
+		<a href="" class="bt01">红米5A</a>
+		<div class="jj01">8天超长待机，137g轻巧机身</div>
+		<div class="jq01">599元起</div></div>
+		
+		<div class="chatu">
+		<a href="" class="zp01">
+			<img src="img/4.png" alt="" class="zp001">
+		</a>
+		<a href="" class="bt01">小米电视4A 43英寸 标准版</a>
+		<div class="jj01">全高清HDR 四核高性能处理器</div>
+		<div class="jq01">1899元起</div></div>
+		
+		<div class="chatu">
+		<a href="" class="zp01">
+			<img src="img/5.png" alt="" class="zp001">
+		</a>
+		<a href="" class="bt01">小米笔记本</a>
+		<div class="jj01">更轻更薄，像杂志一样随身携带</div>
+		<div class="jq01">3599元起</div></div>
+	    </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="beijingcolor">
+    <div class="jiadianheader">
+        <div class="top2">
+	    <div class="left2">家电</div>
+
+
+	<div class="right2">
+	 <div class="g01 g05 active">
+	    <div class="remen ">热门</div>
+	    </div>
+	 <div class="g01 g02">
+	    <div class="dianshiyingyin">电视影音</div>
+	    </div>
+	 <div class="g01 g03">
+	    <div class="diannao">电脑</div>
+	    </div>
+	 <div class="g01 g04">
+	    <div class="jiaju">家居</div>
+	    </div>
+     	</div>
+        </div> 
+        <div class="bottom2">
+	    <div class="left3">
+		<a href="" class="l1"><img src="img/6.png" alt=""></a>
+	    </div>
+
+
+			<!--<script>-->
+
+
+
+				<!--window.onload=function () {-->
+
+              <!--let list=document.querySelectorAll('.right2 .g01');-->
+			  <!--let nav=document.querySelectorAll('.nav .right3');-->
+			  <!--list.forEach(function (dom,index) {-->
+				  <!--dom.onclick=function () {-->
+				      <!--list.forEach(function (a,b) {-->
+				          <!--a.classList.remove('active')-->
+						  <!--nav[b].classList.remove('active')-->
+
+                      <!--})-->
+					  <!--dom.classList.add('active')-->
+					  <!--nav[index+1].classList.add('active')-->
+                  <!--}-->
+              <!--})-->
+			<!--}-->
+
+			<!--</script>-->
+
+
+
+
+			<div class="nav">
+	    <div class="right3 active">
+	    <div class="chatu2">
+	    <div class="dazhe">享9折</div>
+		<a href="" class="zp02">
+			<img src="img/7.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">小米电视4 55英寸</a>
+		<div class="jj02">4.9mm 极超薄高端旗舰电视</div>
+		<div class="jq02">3699元起</div>
+             <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div>
+        </div>	
+
+		<div class="chatu2">
+		<div class="dazhe">享9折</div>
+		<a href="" class="zp02">
+			<img src="img/8.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">小米电视4A 49英寸 标准版</a>
+		<div class="jj02">2GB+8GB 大存储/全高清HDR</div>
+		<div class="jq02">2049元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div>
+        </div>
+
+		<div class="chatu2">
+		<div class="dazhe dazhe1">新品</div>
+		<a href="" class="zp02">
+			<img src="img/9.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">小米笔记本Pro 15.6英寸</a>
+		<div class="jj02">全金属强化机身/FHD全贴合屏幕</div>
+		<div class="jq02">5399元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div>
+        </div>
+
+		<div class="chatu2">
+		<a href="" class="zp02 zp03">
+			<img src="img/10.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">小米笔记本Air 13.3"i7处理器</a>
+		<div class="jj02">intel酷睿i7处理器，8GB内存+256GB</div>
+		<div class="jq02">5599元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div>
+
+        </div>
+
+		<div class="chatu2">
+		<div class="dazhe">享9折</div>
+		<a href="" class="zp02">
+			<img src="img/11.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">米家压力IH电饭煲</a>
+		<div class="jj02">智能烹饪，灰铸铁粉体图层内胆</div>
+		<div class="jq02">899元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div></div>
+
+		<div class="chatu2">
+		<div class="dazhe">享9.5折</div>
+		<a href="" class="zp02">
+			<img src="img/12.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">米家激光投影电视</a>
+		<div class="jj02">150 英寸超大投影尺寸</div>
+		<div class="jq02">9499元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div></div>
+
+		<div class="chatu2">
+		<div class="dazhe">享9折</div>
+		<a href="" class="zp02">
+			<img src="img/13.png" alt="" class="zp002">
+		</a>
+		<a href="" class="bt02">小米空气净化器2</a>
+		<div class="jj02">10分钟，房间空气焕然一新</div>
+		<div class="jq02">599元起</div>
+         <div class="bjys1">
+                 <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                 <div>来自于 刘晨晓 的评价</div>
+             </div></div>
+
+		<div class="chatu2 chatu3">
+		<div class="shang">
+		<div class="left4">
+		    <a href="" class="xbssj">小白摄像机</a>
+			<div class="yuan349">349元</div>
+		</div>
+		<div class="right4">
+			<a href="" class="zp06"><img src="img/14.png" alt=""></a>
+		</div>
+		</div>
+		<div class="xia">
+			<div class="left4">
+			<a href="" class="llgd">浏览更多</a>
+			<div class="rm">热门</div>
+		</div>
+		<div class="right4">
+			<a href="" class="zp06"><img src="img/15.png" alt=""></a>
+		</div>
+		</div>
+		</div>
+	    <!--</div>-->
+
+			<div class="right3">
+				<div class="chatu2">
+					<div class="dazhe">享9折</div>
+					<a href="" class="zp02">
+						<img src="img/10.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">小米电视4 55英寸</a>
+					<div class="jj02">4.9mm 极超薄高端旗舰电视</div>
+					<div class="jq02">3699元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div>
+				</div>
+
+				<div class="chatu2">
+					<div class="dazhe">享9折</div>
+					<a href="" class="zp02">
+						<img src="img/12.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">小米电视4A 49英寸 标准版</a>
+					<div class="jj02">2GB+8GB 大存储/全高清HDR</div>
+					<div class="jq02">2049元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div>
+				</div>
+
+				<div class="chatu2">
+					<div class="dazhe dazhe1">新品</div>
+					<a href="" class="zp02">
+						<img src="img/11.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">小米笔记本Pro 15.6英寸</a>
+					<div class="jj02">全金属强化机身/FHD全贴合屏幕</div>
+					<div class="jq02">5399元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div>
+				</div>
+
+				<div class="chatu2">
+					<a href="" class="zp02 zp03">
+						<img src="img/13.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">小米笔记本Air 13.3"i7处理器</a>
+					<div class="jj02">intel酷睿i7处理器，8GB内存+256GB</div>
+					<div class="jq02">5599元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div>
+
+				</div>
+
+				<div class="chatu2">
+					<div class="dazhe">享9折</div>
+					<a href="" class="zp02">
+						<img src="img/9.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">米家压力IH电饭煲</a>
+					<div class="jj02">智能烹饪，灰铸铁粉体图层内胆</div>
+					<div class="jq02">899元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div></div>
+
+				<div class="chatu2">
+					<div class="dazhe">享9.5折</div>
+					<a href="" class="zp02">
+						<img src="img/7.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">米家激光投影电视</a>
+					<div class="jj02">150 英寸超大投影尺寸</div>
+					<div class="jq02">9499元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div></div>
+
+				<div class="chatu2">
+					<div class="dazhe">享9折</div>
+					<a href="" class="zp02">
+						<img src="img/8.png" alt="" class="zp002">
+					</a>
+					<a href="" class="bt02">小米空气净化器2</a>
+					<div class="jj02">10分钟，房间空气焕然一新</div>
+					<div class="jq02">599元起</div>
+					<div class="bjys1">
+						<p>很强势，想入手，想法已经落实了，就差钱了</p>
+						<div>来自于 刘晨晓 的评价</div>
+					</div></div>
+
+				<div class="chatu2 chatu3">
+					<div class="shang">
+						<div class="left4">
+							<a href="" class="xbssj">小白摄像机</a>
+							<div class="yuan349">349元</div>
+						</div>
+						<div class="right4">
+							<a href="" class="zp06"><img src="img/14.png" alt=""></a>
+						</div>
+					</div>
+					<div class="xia">
+						<div class="left4">
+							<a href="" class="llgd">浏览更多</a>
+							<div class="rm">热门</div>
+						</div>
+						<div class="right4">
+							<a href="" class="zp06"><img src="img/15.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--</div>-->
+
+		<div class="right3">
+			<div class="chatu2">
+				<div class="dazhe">享9折</div>
+				<a href="" class="zp02">
+					<img src="img/11.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">小米电视4 55英寸</a>
+				<div class="jj02">4.9mm 极超薄高端旗舰电视</div>
+				<div class="jq02">3699元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div>
+			</div>
+
+			<div class="chatu2">
+				<div class="dazhe">享9折</div>
+				<a href="" class="zp02">
+					<img src="img/12.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">小米电视4A 49英寸 标准版</a>
+				<div class="jj02">2GB+8GB 大存储/全高清HDR</div>
+				<div class="jq02">2049元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div>
+			</div>
+
+			<div class="chatu2">
+				<div class="dazhe dazhe1">新品</div>
+				<a href="" class="zp02">
+					<img src="img/13.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">小米笔记本Pro 15.6英寸</a>
+				<div class="jj02">全金属强化机身/FHD全贴合屏幕</div>
+				<div class="jq02">5399元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div>
+			</div>
+
+			<div class="chatu2">
+				<a href="" class="zp02 zp03">
+					<img src="img/7.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">小米笔记本Air 13.3"i7处理器</a>
+				<div class="jj02">intel酷睿i7处理器，8GB内存+256GB</div>
+				<div class="jq02">5599元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div>
+
+			</div>
+
+			<div class="chatu2">
+				<div class="dazhe">享9折</div>
+				<a href="" class="zp02">
+					<img src="img/8.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">米家压力IH电饭煲</a>
+				<div class="jj02">智能烹饪，灰铸铁粉体图层内胆</div>
+				<div class="jq02">899元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div></div>
+
+			<div class="chatu2">
+				<div class="dazhe">享9.5折</div>
+				<a href="" class="zp02">
+					<img src="img/9.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">米家激光投影电视</a>
+				<div class="jj02">150 英寸超大投影尺寸</div>
+				<div class="jq02">9499元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div></div>
+
+			<div class="chatu2">
+				<div class="dazhe">享9折</div>
+				<a href="" class="zp02">
+					<img src="img/10.png" alt="" class="zp002">
+				</a>
+				<a href="" class="bt02">小米空气净化器2</a>
+				<div class="jj02">10分钟，房间空气焕然一新</div>
+				<div class="jq02">599元起</div>
+				<div class="bjys1">
+					<p>很强势，想入手，想法已经落实了，就差钱了</p>
+					<div>来自于 刘晨晓 的评价</div>
+				</div></div>
+
+			<div class="chatu2 chatu3">
+				<div class="shang">
+					<div class="left4">
+						<a href="" class="xbssj">小白摄像机</a>
+						<div class="yuan349">349元</div>
+					</div>
+					<div class="right4">
+						<a href="" class="zp06"><img src="img/14.png" alt=""></a>
+					</div>
+				</div>
+				<div class="xia">
+					<div class="left4">
+						<a href="" class="llgd">浏览更多</a>
+						<div class="rm">热门</div>
+					</div>
+					<div class="right4">
+						<a href="" class="zp06"><img src="img/15.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--</div>-->
+	<!--</div>-->
+
+
+
+	<div class="right3">
+		<div class="chatu2">
+			<div class="dazhe">享9折</div>
+			<a href="" class="zp02">
+				<img src="img/13.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">小米电视4 55英寸</a>
+			<div class="jj02">4.9mm 极超薄高端旗舰电视</div>
+			<div class="jq02">3699元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div>
+		</div>
+
+		<div class="chatu2">
+			<div class="dazhe">享9折</div>
+			<a href="" class="zp02">
+				<img src="img/12.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">小米电视4A 49英寸 标准版</a>
+			<div class="jj02">2GB+8GB 大存储/全高清HDR</div>
+			<div class="jq02">2049元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div>
+		</div>
+
+		<div class="chatu2">
+			<div class="dazhe dazhe1">新品</div>
+			<a href="" class="zp02">
+				<img src="img/11.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">小米笔记本Pro 15.6英寸</a>
+			<div class="jj02">全金属强化机身/FHD全贴合屏幕</div>
+			<div class="jq02">5399元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div>
+		</div>
+
+		<div class="chatu2">
+			<a href="" class="zp02 zp03">
+				<img src="img/10.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">小米笔记本Air 13.3"i7处理器</a>
+			<div class="jj02">intel酷睿i7处理器，8GB内存+256GB</div>
+			<div class="jq02">5599元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div>
+
+		</div>
+
+		<div class="chatu2">
+			<div class="dazhe">享9折</div>
+			<a href="" class="zp02">
+				<img src="img/9.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">米家压力IH电饭煲</a>
+			<div class="jj02">智能烹饪，灰铸铁粉体图层内胆</div>
+			<div class="jq02">899元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div></div>
+
+		<div class="chatu2">
+			<div class="dazhe">享9.5折</div>
+			<a href="" class="zp02">
+				<img src="img/8.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">米家激光投影电视</a>
+			<div class="jj02">150 英寸超大投影尺寸</div>
+			<div class="jq02">9499元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div></div>
+
+		<div class="chatu2">
+			<div class="dazhe">享9折</div>
+			<a href="" class="zp02">
+				<img src="img/7.png" alt="" class="zp002">
+			</a>
+			<a href="" class="bt02">小米空气净化器2</a>
+			<div class="jj02">10分钟，房间空气焕然一新</div>
+			<div class="jq02">599元起</div>
+			<div class="bjys1">
+				<p>很强势，想入手，想法已经落实了，就差钱了</p>
+				<div>来自于 刘晨晓 的评价</div>
+			</div></div>
+
+
+
+		<div class="chatu2 chatu3">
+			<div class="shang">
+				<div class="left4">
+					<a href="" class="xbssj">小白摄像机</a>
+					<div class="yuan349">349元</div>
+				</div>
+				<div class="right4">
+					<a href="" class="zp06"><img src="img/14.png" alt=""></a>
+				</div>
+			</div>
+			<div class="xia">
+				<div class="left4">
+					<a href="" class="llgd">浏览更多</a>
+					<div class="rm">热门</div>
+				</div>
+				<div class="right4">
+					<a href="" class="zp06"><img src="img/15.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="right3">
+					<div class="chatu2">
+						<div class="dazhe">享9折</div>
+						<a href="" class="zp02">
+							<img src="img/12.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">小米电视4 55英寸</a>
+						<div class="jj02">4.9mm 极超薄高端旗舰电视</div>
+						<div class="jq02">3699元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div>
+					</div>
+
+					<div class="chatu2">
+						<div class="dazhe">享9折</div>
+						<a href="" class="zp02">
+							<img src="img/11.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">小米电视4A 49英寸 标准版</a>
+						<div class="jj02">2GB+8GB 大存储/全高清HDR</div>
+						<div class="jq02">2049元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div>
+					</div>
+
+					<div class="chatu2">
+						<div class="dazhe dazhe1">新品</div>
+						<a href="" class="zp02">
+							<img src="img/13.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">小米笔记本Pro 15.6英寸</a>
+						<div class="jj02">全金属强化机身/FHD全贴合屏幕</div>
+						<div class="jq02">5399元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div>
+					</div>
+
+					<div class="chatu2">
+						<a href="" class="zp02 zp03">
+							<img src="img/10.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">小米笔记本Air 13.3"i7处理器</a>
+						<div class="jj02">intel酷睿i7处理器，8GB内存+256GB</div>
+						<div class="jq02">5599元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div>
+
+					</div>
+
+					<div class="chatu2">
+						<div class="dazhe">享9折</div>
+						<a href="" class="zp02">
+							<img src="img/9.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">米家压力IH电饭煲</a>
+						<div class="jj02">智能烹饪，灰铸铁粉体图层内胆</div>
+						<div class="jq02">899元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div></div>
+
+					<div class="chatu2">
+						<div class="dazhe">享9.5折</div>
+						<a href="" class="zp02">
+							<img src="img/8.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">米家激光投影电视</a>
+						<div class="jj02">150 英寸超大投影尺寸</div>
+						<div class="jq02">9499元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div></div>
+
+					<div class="chatu2">
+						<div class="dazhe">享9折</div>
+						<a href="" class="zp02">
+							<img src="img/7.png" alt="" class="zp002">
+						</a>
+						<a href="" class="bt02">小米空气净化器2</a>
+						<div class="jj02">10分钟，房间空气焕然一新</div>
+						<div class="jq02">599元起</div>
+						<div class="bjys1">
+							<p>很强势，想入手，想法已经落实了，就差钱了</p>
+							<div>来自于 刘晨晓 的评价</div>
+						</div></div>
+
+
+
+					<div class="chatu2 chatu3">
+						<div class="shang">
+							<div class="left4">
+								<a href="" class="xbssj">小白摄像机</a>
+								<div class="yuan349">349元</div>
+							</div>
+							<div class="right4">
+								<a href="" class="zp06"><img src="img/14.png" alt=""></a>
+							</div>
+						</div>
+						<div class="xia">
+							<div class="left4">
+								<a href="" class="llgd">浏览更多</a>
+								<div class="rm">热门</div>
+							</div>
+							<div class="right4">
+								<a href="" class="zp06"><img src="img/15.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+	</div>
+	<!---->
+	</div>
+	</div>
+	</div>
+        </div>
+
+
+
+        <!-- 只能 -->
+    <div class="zhineng">
+    	<div class="zhinengtop">
+    		<div class="zhinengtop_left">智能</div>
+    		<div class="zhinengtop_right">
+    			<a href="">热门</a>
+    			<a href="">出行</a>
+    			<a href="">健康</a>
+    			<a href="">酷玩</a>
+    			<a href="">路由器</a>
+    		</div>
+    	</div>
+    	<div class="zhinengbottom">
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/16.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/18.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/19.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/20.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/21.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/17.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/22.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe zhineng_mianyoufei">免邮费</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/23.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/24.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_chanpinlast1">
+    				<div class="zncplast1_left">
+    					<a href="" >小米VR眼镜</a>
+    					<div class="zncplast1_jq">199元</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/25.png" alt=""></a>
+    				</div>
+    			</div>
+    			<div class="zhineng_chanpinlast2">
+    				<div class="zncplast2_left">
+    					<a href="" >浏览更多</a>
+    					<div class="zncplast1_rm">热门</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/26.png" alt=""></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+    <!-- 搭配 -->
+    <div class="zhineng">
+    	<div class="zhinengtop">
+    		<div class="zhinengtop_left">搭配</div>
+    		<div class="dapeitop_right">
+    			<a href="">热门</a>
+    			<a href="">耳机音箱</a>
+    			<a href="">电源</a>
+    			<a href="">电池存储卡</a>
+    		</div>
+    	</div>
+    	<div class="zhinengbottom">
+    		<div class="zhineng_chanpin">
+    			<a hr[ ef="" class="zp11"><img src="img/diyizu/shang1.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/shang2.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米AI音箱</a>
+    			<div class="zhineng_jj">1.5万人评论</div>
+    			<div class="zhineng_jq">299元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/shang3.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米移动电源2C 20000mAh</a>
+    			<div class="zhineng_jj">9323人评论</div>
+    			<div class="zhineng_jq">109元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/shang4 .png" alt=""></a>
+    			<a href="" class="zhineng_title">小米运动蓝牙耳机mini</a>
+    			<div class="zhineng_jj">5669人评价</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/shang5.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米移动电源10000mAh高配版</a>
+    			<div class="zhineng_jj">1.8万人评论</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/diyizu/xia1.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/xia2.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米蓝牙耳机青春版</a>
+    			<div class="zhineng_jj">4.2万人评论</div>
+    			<div class="zhineng_jq">53元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe zhineng_mianyoufei">免邮费</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/xia3.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米铁圈耳机</a>
+    			<div class="zhineng_jj">OLED显示屏幕，升级计算步法</div>
+    			<div class="zhineng_jq">89元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/diyizu/xia4.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_chanpinlast1">
+    				<div class="zncplast1_left">
+    					<a href="" >小米蓝牙...</a>
+    					<div class="zncplast1_jq">199元</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/25.png" alt=""></a>
+    				</div>
+    			</div>
+    			<div class="zhineng_chanpinlast2">
+    				<div class="zncplast2_left">
+    					<a href="" >浏览更多</a>
+    					<div class="zncplast1_rm">热门</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/26.png" alt=""></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <!-- 配件 -->
+    <div class="zhineng">
+    	<div class="zhinengtop">
+    		<div class="zhinengtop_left">配件</div>
+    		<div class="peijiantop_right">
+    			<a href="">热门</a>
+    			<a href="">保护套</a>
+    			<a href="">贴膜</a>
+    			<a href="">其他配件</a>
+    		</div>
+    	</div>
+    	<div class="zhinengbottom">
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/dierzu/xiamian1.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian2.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米6硅胶保护套</a>
+    			<div class="zhineng_jj">8406人评论</div>
+    			<div class="zhineng_jq">49元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian3.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米移动电源 10000mAh...</a>
+    			<div class="zhineng_jj">2041人评论</div>
+    			<div class="zhineng_jq">29元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian4.png" alt=""></a>
+    			<a href="" class="zhineng_title">MIX 2全陶瓷版极简保护壳</a>
+    			<div class="zhineng_jj">233人评价</div>
+    			<div class="zhineng_jq">39元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian5.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米6 超薄皮质保护套</a>
+    			<div class="zhineng_jj">OLED显示屏幕，升级计算步法</div>
+    			<div class="zhineng_jq">49元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/dierzu/xiamian6.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian7.png" alt=""></a>
+    			<a href="" class="zhineng_title">小米6 标准高透贴膜</a>
+    			<div class="zhineng_jj">1.1万人评论</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe zhineng_mianyoufei">免邮费</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian8.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">1.1万人评论</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_dazhe">享9折</div>
+    			<a href="" class="zhineng_chanpin1"><img src="img/dierzu/xiamian9.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">1.1万人评论</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_chanpinlast1">
+    				<div class="zncplast1_left">
+    					<a href="" >小米VR眼镜</a>
+    					<div class="zncplast1_jq">199元</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/25.png" alt=""></a>
+    				</div>
+    			</div>
+    			<div class="zhineng_chanpinlast2">
+    				<div class="zncplast2_left">
+    					<a href="" >浏览更多</a>
+    					<div class="zncplast1_rm">热门</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/26.png" alt=""></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+
+    <!-- 周边 -->
+    <div class="zhineng">
+    	<div class="zhinengtop">
+    		<div class="zhinengtop_left">周边</div>
+    		<div class="zhoubiantop_right">
+    			<a href="">热门</a>
+    			<a href="">服装</a>
+    			<a href="">居家</a>
+    			<a href="">生活周边</a>
+    			<a href="">箱包</a>
+    		</div>
+    	</div>
+    	<div class="zhinengbottom">
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/disanzu/2 (10).png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    		<!-- 	<div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/2.png" alt=""></a>
+    			<a href="" class="zhineng_title">90分轻商务登机箱 米家定制</a>
+    			<div class="zhineng_jj"><!-- 无可视频闪，四种场景优化调光 --></div>
+    			<div class="zhineng_jq">369元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<!-- <div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/3.png" alt=""></a>
+    			<a href="" class="zhineng_title">90分旅行箱</a>
+    			<div class="zhineng_jj"><!-- 无可视频闪，四种场景优化调光 --></div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<!-- <div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/4.png" alt=""></a>
+    			<a href="" class="zhineng_title">8H独立袋装弹簧布艺沙发</a>
+    			<div class="zhineng_jj"><!-- 无可视频闪，四种场景优化调光 --></div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    	<!-- 		<div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/5.png" alt=""></a>
+    			<a href="" class="zhineng_title">8H三曲线护颈记忆棉枕</a>
+    			<div class="zhineng_jj"><!-- 无可视频闪，四种场景优化调光 --></div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<a href="" class="zp11"><img src="img/disanzu/6.png" alt=""></a>
+    		</div>
+    		<div class="zhineng_chanpin">
+    		<!-- 	<div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/7.png" alt=""></a>
+    			<a href="" class="zhineng_title">8H碟形护颈记忆棉枕</a>
+    			<div class="zhineng_jj"><!-- 无可视频闪，四种场景优化调光 --></div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<!-- <div class="zhineng_dazhe zhineng_mianyoufei">免邮费</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/7.png" alt=""></a>
+    			<a href="" class="zhineng_title">知吾煮抗摔玻璃保鲜盒1100ml</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+    		<div class="zhineng_chanpin">
+    			<!-- <div class="zhineng_dazhe">享9折</div> -->
+    			<a href="" class="zhineng_chanpin1"><img src="img/disanzu/9.png" alt=""></a>
+    			<a href="" class="zhineng_title">米家 LED 智能台灯</a>
+    			<div class="zhineng_jj">无可视频闪，四种场景优化调光</div>
+    			<div class="zhineng_jq">149元</div>
+                <div class="bjys2">
+                    <p>很强势，想入手，想法已经落实了，就差钱了</p>
+                    <div>来自于 刘晨晓 的评价</div>
+
+                </div>
+    		</div>
+
+    		<div class="zhineng_chanpin">
+    			<div class="zhineng_chanpinlast1">
+    				<div class="zncplast1_left">
+    					<a href="" >小米VR眼镜</a>
+    					<div class="zncplast1_jq">199元</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/disanzu/10.png" alt=""></a>
+    				</div>
+    			</div>
+    			<div class="zhineng_chanpinlast2">
+    				<div class="zncplast2_left">
+    					<a href="" >浏览更多</a>
+    					<div class="zncplast1_rm">热门</div>
+    				</div>
+    				<div class="zncplast1_right">
+    					<a href="" class="yanjing"><img src="img/26.png" alt=""></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+
+
+
+
+    <!-- 推荐 -->
+    <div class="wntj">
+	    <div class="wntj_top">
+		<div class="wntj_top_left">为你推荐</div>
+		<div class="wntj_top_right">
+			<div class="right1">
+		        <div class="right1_1">&lt;</div>
+		        <div class="right1_2">&gt;</div>
+		</div>
+		</div>
+	    </div>
+	    <div class="wntj_bottom">
+		<div class="wntj_chanpin">
+			<a href="" class="wntjcpzp"><img src="img/27.png" alt=""></a>
+			<a href="" class="wntjcpbt">小米5A</a>
+			<div class="wntjcpjq">1499元</div>
+			<div class="wntjcpjj">3.4万人好评</div>
+		</div>
+		<div class="wntj_chanpin">
+			<a href="" class="wntjcpzp"><img src="img/28.png" alt=""></a>
+			<a href="" class="wntjcpbt">小米5A</a>
+			<div class="wntjcpjq">1499元</div>
+			<div class="wntjcpjj">3.4万人好评</div>
+		</div>
+		<div class="wntj_chanpin">
+			<a href="" class="wntjcpzp"><img src="img/29.png" alt=""></a>
+			<a href="" class="wntjcpbt">小米5A</a>
+			<div class="wntjcpjq">1499元</div>
+			<div class="wntjcpjj">3.4万人好评</div>
+		</div>
+		<div class="wntj_chanpin">
+			<a href="" class="wntjcpzp"><img src="img/30.png" alt=""></a>
+			<a href="" class="wntjcpbt">小米5A</a>
+			<div class="wntjcpjq">1499元</div>
+			<div class="wntjcpjj">3.4万人好评</div>
+		</div>
+		<div class="wntj_chanpin">
+			<a href="" class="wntjcpzp"><img src="img/31.png" alt=""></a>
+			<a href="" class="wntjcpbt">小米5A</a>
+			<div class="wntjcpjq">1499元</div>
+			<div class="wntjcpjj">3.4万人好评</div>
+		</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- 热评 -->
+    <div class="rpcp">
+	<div class="rpcp_top">
+		<div class="rpcp_text">热评产品</div>
+	</div>
+	<div class="rpcp_bottom">
+	    <div class="rpcpcp">
+	    	<a href="" class="rpcpcpzp"><img src="img/reping/1m.png" alt=""></a>
+	    	<div class="rpcp_rpcpcp_bottom">
+	    	<a href="">
+	    	    <p class="rpcp_jj">
+	    		很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了
+	    	    </p>
+	    	</a>
+	    	<div class="rpcp_pj">来自于刘晨晓的评价</div>
+	    	<div class="rpcp_btjq">
+	    		<a href="" class="rpcp_bt"> 米兔定位电话</a>
+	    		<div class="rpcp_jq">229元</div>
+	    	</div>
+	    	</div>
+	    </div>
+	    <div class="rpcpcp">
+	    	<div class="rpcpcp">
+	    	<a href="" class="rpcpcpzp"><img src="img/reping/2.png" alt=""></a>
+	    	<div class="rpcp_rpcpcp_bottom">
+	    	<a href="">
+	    	    <p class="rpcp_jj">
+	    		很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了...
+	    	    </p>
+	    	</a>
+	    	<div class="rpcp_pj">来自于刘晨晓的评价</div>
+	    	<div class="rpcp_btjq">
+	    		<a href="" class="rpcp_bt"> 空气净化器...</a>
+	    		<div class="rpcp_jq">129元</div>
+	    	</div>
+	    	</div>
+	    </div>
+	    </div>
+	    <div class="rpcpcp">
+	    	<div class="rpcpcp">
+	    	<a href="" class="rpcpcpzp"><img src="img/reping/3m.png" alt=""></a>
+	    	<div class="rpcp_rpcpcp_bottom">
+	    	<a href="">
+	    	    <p class="rpcp_jj">
+	    		很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了...
+	    	    </p>
+	    	</a>
+	    	<div class="rpcp_pj">来自于刘晨晓的评价</div>
+	    	<div class="rpcp_btjq">
+	    		<a href="" class="rpcp_bt"> 90分旅行箱20寸</a>
+	    		<div class="rpcp_jq">149元</div>
+	    	</div>
+	    	</div>
+	    </div>
+	    </div>
+	    <div class="rpcpcp">
+	    	<div class="rpcpcp">
+	    	<a href="" class="rpcpcpzp"><img src="img/reping/4.png" alt=""></a>
+	    	<div class="rpcp_rpcpcp_bottom">
+	    	<a href="">
+	    	    <p class="rpcp_jj">
+	    		很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了很强势，想入手，想法已经落实了，就差钱了
+	    	    </p>
+	    	</a>
+	    	<div class="rpcp_pj">来自于刘晨晓的评价</div>
+	    	<div class="rpcp_btjq">
+	    		<a href="" class="rpcp_bt"> 小米路由器3</a>
+	    		<div class="rpcp_jq">119元</div>
+	    	</div>
+	    	</div>
+	    </div>
+	    </div>
+	</div>
+    </div>
+
+
+
+
+    <!-- 内容 -->
+    <div class="neirong">
+	<div class="nr_top">
+		<div class="nr_top_left">内容</div>
+    </div>
+	<div class="nr_bottom">
+		<div class="nr_cp">
+			<div class="nr_lb">图书</div>
+			<div class="nr_bt">哈利·波特与被诅咒的孩子</div>
+			<p class="nr_jj">哈利·波特第八个故事中文版本震撼来袭！特别彩排版剧本！</p>
+			<div class="nr_jq">29.37元</div>
+			<div class="nr_zp"><img src="img/36.png" alt=""></div>
+			<div class="nr_lbd">
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+			</div>
+		</div>
+		<div class="nr_cp">
+			<div class="nr_lb nr_lb2">MIUI主题</div>
+			<div class="nr_bt">哈利·波特与被诅咒的孩子</div>
+			<p class="nr_jj">哈利·波特第八个故事中文版本震撼来袭！特别彩排版剧本！</p>
+			<div class="nr_jq">29.37元</div>
+			<div class="nr_zp"><img src="img/36.png" alt=""></div>
+			<div class="nr_lbd">
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+			</div>
+		</div>
+		<div class="nr_cp">
+			<div class="nr_lb nr_lb3">游戏</div>
+			<div class="nr_bt">哈利·波特与被诅咒的孩子</div>
+			<p class="nr_jj">哈利·波特第八个故事中文版本震撼来袭！特别彩排版剧本！</p>
+			<div class="nr_jq">29.37元</div>
+			<div class="nr_zp"><img src="img/36.png" alt=""></div>
+			<div class="nr_lbd">
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+			</div>
+		</div>
+		<div class="nr_cp">
+			<div class="nr_lb nr_lb4">应用</div>
+			<div class="nr_bt">哈利·波特与被诅咒的孩子</div>
+			<p class="nr_jj">哈利·波特第八个故事中文版本震撼来袭！特别彩排版剧本！</p>
+			<div class="nr_jq">29.37元</div>
+			<div class="nr_zp"><img src="img/36.png" alt=""></div>
+			<div class="nr_lbd">
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+				<div class="nr_lbd1"></div>
+			</div>
+		</div>
+	</div>
+    </div>
+
+
+
+
+    <!-- 视频 -->
+    <div class="shipin">
+        <div class="shipin_top">
+            <div class="shipin_text">视频</div>
+            <a href="" class="sp_top_right">
+                <div class="sp_top_right_text">查看更多</div>
+                <div class="sp_top_right_zp"></div>
+            </a>
+        </div>
+        <div class="shipin_bottom">
+            <div class="sp_bottom_lm">
+                <div class="sp_lm_top0">
+                   <a href="" class="sp_lm_top" title="点击播放视频"><img src="img/45.png" alt=""></a>
+                   <div class="sp_bfj"></div>
+                </div>
+                <a  href="" class="sp_lm_bt">雷军与史塔克打造全面屏2.0</a>
+                <div class="sp_lm_jj">一场关于小米MIX2 极致工艺的巅峰对话</div>
+            </div>
+            <div class="sp_bottom_lm">
+                <div class="sp_lm_top0">
+                   <a href="" class="sp_lm_top" title="点击播放视频"><img src="img/46.png" alt=""></a>
+                   <div class="sp_bfj"></div>
+                </div>
+                <a  href="" class="sp_lm_bt" title="点击播放视频">小米note3与吴亦凡</a>
+                <div class="sp_lm_jj">看看小米note3与吴亦凡谁更帅</div>
+            </div>
+            <div class="sp_bottom_lm">
+                <div class="sp_lm_top0">
+                   <a href="" class="sp_lm_top" title="点击播放视频"><img src="img/47.png" alt=""></a>
+                   <div class="sp_bfj"></div>
+                </div>
+                <a  href="" class="sp_lm_bt">MIUI 9 理念视频</a>
+                <div class="sp_lm_jj">快如闪电 前所未有的流畅</div>
+            </div>
+            <div class="sp_bottom_lm">
+                <div class="sp_lm_top0">
+                   <a href="" class="sp_lm_top" title="点击播放视频"><img src="img/45.png" alt=""></a>
+                   <div class="sp_bfj"></div>
+                </div>
+                <a  href="" class="sp_lm_bt">拍人更美的背后故事</a>
+                <div class="sp_lm_jj">小米手机工程师的采访视频</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="zd">
+        <div class="zd_zd">
+            <a href="" class="zd_zd_zp">
+                <i class="zdzp">&#xe629;</i>
+            </a>
+            <a href="" class="zd_zd_text">预约维修服务</a>
+        </div>
+        <div class="zd_zd">
+            <a href="" class="zd_zd_zp">
+                <i class="zdzp">&#xe600;</i>
+            </a>
+            <a href="" class="zd_zd_text">7天无理由退货</a>
+        </div>
+        <div class="zd_zd">
+            <a href="" class="zd_zd_zp">
+                <i class="zdzp">&#xe605;</i>
+            </a>
+            <a href="" class="zd_zd_text">15天免费换货</a>
+        </div>
+        <div class="zd_zd">
+            <a href="" class="zd_zd_zp">
+                <i class="zdzp">&#xe615;</i>
+            </a>
+            <a href="" class="zd_zd_text">满150元包邮</a>
+        </div>
+        <div class="zd_zd">
+            <a href="" class="zd_zd_zp">
+                <i class="zdzp">&#xe693;</i>
+            </a>
+            <a href="" class="zd_zd_text _zd_zd_text1">520余家售后网店</a>
+        </div>
+    </div>
+    <div class="zd_lb">
+            <div class="zd_lb_left">
+                <div class="list1">
+                    <a href="" class="">帮助中心</a>
+                    <a href="" class="">服务支持</a>
+                    <a href="" class="">线下门店</a>
+                    <a href="" class="">关于小米</a>
+                    <a href="" class="">关注我们</a>
+                    <a href="" class="">特色服务</a>
+                </div>
+                <div class="list2">
+                    <a href="" class="">账户管理</a>
+                    <a href="" class="">售后政策</a>
+                    <a href="" class="">小米之家</a>
+                    <a href="" class="">了解小米</a>
+                    <a href="" class="">新浪微博</a>
+                    <a href="" class="">F码通道</a>
+                </div>
+                <div class="list3">
+                    <a href="" class="">购物指南</a>
+                    <a href="" class="">自助服务</a>
+                    <a href="" class="">服务网点</a>
+                    <a href="" class="">加入小米</a>
+                    <a href="" class="">小米部落</a>
+                    <a href="" class="">礼物码</a>
+                </div>
+                <div class="list4">
+                    <a href="" class="">订单操作</a>
+                    <a href="" class="">相关下载</a>
+                    <a href="" class="">零售网点</a>
+                    <a href="" class="">联系我们</a>
+                    <a href="" class="">官方微信</a>
+                    <a href="" class="">防伪查询</a>
+                </div>
+            </div>
+            <div class="zd_lb_right">
+                <div class="dianhua">400-100-1234</div>
+                <div class="gongzuoshijian">周一至周日 8:00-18:00</div>
+                <div class="kuohaonei">(仅收市话费)</div>
+                <div class="zaixiankefu">
+                    <a href="" class="zaixiankefu1">                     
+                        <div class="zaixiankefu1_zp1">
+                                <i class="zaixiankefu1_zp1_1">&#xe67d;</i>
+                        </div>
+                        <div class="zaixiankefu1_text">24小时在线客服</div>
+                    </a>
+                </div>
+            </div>
+    </div>
+    <div class="co">
+        <div class="banquan">
+        <div class="banquan_logo"><img src="img/mi.png" alt=""></div>
+        <div class="banquan_text">
+            <div class="banquan_daohang">
+                <a href="">小米商城</a>
+                <a href="">MIUI</a>
+                <a href="">米家</a>
+                <a href="">米聊</a>
+                <a href="">多看</a>
+                <a href="">路由器</a>
+                <a href="">米粉卡</a>
+                <a href="">小米天猫店</a>
+                <a href="">隐私政策</a>
+                <a href="">问题反馈</a>
+                <a href="">Select Region</a>
+            </div>
+            <div class="banquan_shouquan1">
+                <a href="">@mi.com</a>
+                <div>京ICP证110507号</div>
+                <a href="">京ICP备10046444号</a>
+                <a href="">京公网安备11010802020134号</a>
+                <a href="">京网文[2014]0059-0009号</a>
+            </div>
+             <div class="banquan_shouquan2">违法和不良信息举报电话：185-0130-1234，本网站本网站所列数据，除特殊说明，所有数据均出自我司实验室测试   
+            </div>
+        </div>
+        <div class="baozhang">
+            <div class="baozhang1">
+                <a href=""><img src="img/51.png" alt=""></a>
+            </div>
+            <div class="baozhang1">
+                <a href="" class="baozhang1_left"><img src="img/52.png" alt=""></a>
+                <a href="" class="baozhang1_right">诚信网站示范企业</a>
+            </div>
+            <div class="baozhang1">
+                <a href="" class="baozhang1_left"><img src="img/53.png" alt=""></a>
+                <a href="" class="baozhang1_right">可信网站信用评价</a>
+            </div>
+            <div class="baozhang1">
+                <a href="" class="baozhang1_left"><img src="img/54.png" alt=""></a>
+                <a href="" class="baozhang1_right">网上交易保障中心</a>
+            </div>
+            <div class="baozhang1">
+                <a href="" class="baozhang1_left"><img src="img/55.png" alt=""></a>
+                <a href="" class="baozhang1_right">诚信经营放心消费</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>  
+</html> 
